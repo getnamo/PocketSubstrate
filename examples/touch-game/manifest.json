@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1, "apiVersion": 1, "id": "touch-game", "name": "Orbit Tap",
+  "description": "Tap the moving planet. Node owns scoring and saves your best run. Optional haptics and tilt controls.",
+  "frontend": "web/index.html", "backend": "backend/main.cjs",
+  "capabilities": [
+    { "name": "storage", "reason": "Save your best score on this device." },
+    { "name": "haptics", "reason": "Give a short pulse when you score." },
+    { "name": "motion", "reason": "Move the planet when you tilt your phone." }
+  ]
+}

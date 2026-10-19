@@ -33,3 +33,12 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+# Development dependencies, local pairing identities, and generated bundles
+.local/
+node_modules/
+dist/
+android/vendor/
+.publisher/
+*.psub
+android/app/src/main/assets/

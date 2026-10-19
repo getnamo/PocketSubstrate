@@ -1,0 +1,27 @@
+{
+  "name": "pocket-substrate",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "tsc --noEmit",
+    "bundle": "node tools/publisher/cli.mjs bundle",
+    "publish": "node tools/publisher/cli.mjs serve",
+    "prepare:android": "node tools/prepare-android.mjs",
+    "test:emulator-e2e": "node tools/emulator-e2e.mjs"
+  },
+  "dependencies": {
+    "esbuild": "0.25.11",
+    "fflate": "0.8.2",
+    "qrcode": "1.5.4",
+    "selfsigned": "2.4.1",
+    "ws": "8.18.3"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}

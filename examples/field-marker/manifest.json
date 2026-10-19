@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1, "apiVersion": 1, "id": "field-marker", "name": "Field Notes",
+  "description": "Save a quick note about where an idea occurred. Approximate location is optional.",
+  "frontend": "web/index.html", "backend": "backend/main.cjs",
+  "capabilities": [
+    { "name": "storage", "reason": "Keep your latest field note on this device." },
+    { "name": "location", "reason": "Attach an approximate location when you press Locate." }
+  ]
+}
